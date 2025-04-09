@@ -1,0 +1,11 @@
+# Ignore Visual Studio files
+.vs/
+.vscode/
+.idea/
+# Ignore build directories
+bin/
+obj/
+
+# Ignore C++ specific files
+*.user
+*.suo
