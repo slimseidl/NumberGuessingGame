@@ -25,7 +25,10 @@ int main()
         std::cout << "Try again.\n";
         std::cin >> guess;
     }
-    std::cout << "Nailed It!";
+    std::cout << "Nailed It!\n";
+
+    std::cin.ignore(); 
+    std::cin.get(); //ensures terminal is not exited until user escapes
 }
     
 
