@@ -14,7 +14,19 @@ int main()
     std::cout << "I'm thinking of a number between 1 and 100.\n";
     std::cout << "Enter your guess below:\n";
     std::cin >> guess; //initial guess
-    
+
+    while (guess != answer) {
+        if (guess < answer) {
+            std::cout << "Higher\n";
+        }
+        else {
+            std::cout << "Lower\n";
+        }
+        std::cout << "Try again.\n";
+        std::cin >> guess;
+    }
+    std::cout << "Nailed It!";
 }
+    
 
 
